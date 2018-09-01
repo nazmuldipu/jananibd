@@ -16,6 +16,9 @@ import { PackagesComponent } from './containers/packages/packages.component';
 import { ContactsComponent } from './containers/contacts/contacts.component';
 import { HomeComponents } from './home.component';
 import { OrderComponent } from './containers/order/order.component';
+import { FtpServersComponent } from './components/ftp-servers/ftp-servers.component';
+import { TorrentServersComponent } from './components/torrent-servers/torrent-servers.component';
+import { LiveTvsComponent } from './components/live-tvs/live-tvs.component';
 
 // routes
 export const ROUTES: Routes = [
@@ -46,6 +49,18 @@ export const ROUTES: Routes = [
       {
         path: 'order',
         component: OrderComponent
+      },
+      {
+        path: 'ftp-serves',
+        component: FtpServersComponent
+      },
+      {
+        path: 'torrent-servers',
+        component: TorrentServersComponent
+      },
+      {
+        path: 'live-tvs',
+        component: LiveTvsComponent
       }
     ]
   }
@@ -67,7 +82,10 @@ export const ROUTES: Routes = [
     ServicesComponent,
     PackagesComponent,
     ContactsComponent,
-    OrderComponent
+    OrderComponent,
+    FtpServersComponent,
+    TorrentServersComponent,
+    LiveTvsComponent
   ]
 })
 export class HomeModule {}

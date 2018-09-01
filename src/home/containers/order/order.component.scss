@@ -5,6 +5,7 @@
   &-title {
     text-align: center;
     color: #14a0f8;
+    margin: 20px 0;
   }
   &-point {
     & h4 {
@@ -14,15 +15,37 @@
     font-weight: 200;
   }
   &-box {
+    margin: 20px 0;
     padding: 20px;
     text-align: center;
     font-size: 30px;
     border: 3px solid #14a0f8;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    & i {
+      background: #14a0f8;
+      color: #fff;
+      display: inline-block;
+      line-height: 40px;
+      //   font-size: 35px;
+      font-weight: bold;
+      width: 40px;
+      text-align: center;
+      border-radius: 50%;
+    }
   }
   &-box:hover {
-    font-size: 40px;
-    padding: 12px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.36), 0 0 0 2px rgba(0, 0, 0, 0.08);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }

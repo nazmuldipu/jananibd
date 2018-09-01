@@ -26,8 +26,16 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/packages">PACKAGES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">MEDIA</a>
+        <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEDIA</a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" routerLink="/ftp-serves">
+              FTP SERVER </a>
+            <a class="dropdown-item" routerLink="/torrent-servers">
+              TORRENT SERVE </a>
+            <a class="dropdown-item" routerLink="/live-tvs">
+              LIVE TV</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/contacts">CONTACTS</a>
