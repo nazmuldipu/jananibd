@@ -1,0 +1,16 @@
+.about {
+  min-height: calc(100vh - 150px);
+  //   min-height: calc(100vh - 89px);
+  padding: 20px 0;
+  &-title {
+    text-align: center;
+    color: #14a0f8;
+  }
+  &-point {
+    & h4 {
+      padding: 20px 0 10px 0;
+    }
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
