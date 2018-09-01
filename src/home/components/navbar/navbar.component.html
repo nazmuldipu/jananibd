@@ -1,44 +1,44 @@
 <nav class="navbar navbar-expand-md raised">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapse()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <a class="navbar-brand" href="#">
       <img src="assets/images/logo.png">
     </a>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <div class="collapse navbar-collapse show" id="navbarsExampleDefault" [class.show]="show">
 
       <ul class="navbar-nav mr-auto">
       </ul>
 
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">HOME</a>
+          <a class="nav-link" routerLink="/" (click)="toggleCollapse()">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">ABOUT</a>
+          <a class="nav-link" routerLink="/about" (click)="toggleCollapse()">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/services">SERVICES</a>
+          <a class="nav-link" routerLink="/services" (click)="toggleCollapse()">SERVICES</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/packages">PACKAGES</a>
+          <a class="nav-link" routerLink="/packages" (click)="toggleCollapse()">PACKAGES</a>
         </li>
         <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
           <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEDIA</a>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" routerLink="/ftp-serves">
+            <a class="dropdown-item" routerLink="/ftp-serves" (click)="toggleCollapse()">
               FTP SERVER </a>
-            <a class="dropdown-item" routerLink="/torrent-servers">
+            <a class="dropdown-item" routerLink="/torrent-servers" (click)="toggleCollapse()">
               TORRENT SERVE </a>
-            <a class="dropdown-item" routerLink="/live-tvs">
+            <a class="dropdown-item" routerLink="/live-tvs" (click)="toggleCollapse()">
               LIVE TV</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contacts">CONTACTS</a>
+          <a class="nav-link" routerLink="/contacts" (click)="toggleCollapse()">CONTACTS</a>
         </li>
 
       </ul>
