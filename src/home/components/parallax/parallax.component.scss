@@ -1,0 +1,44 @@
+.parallax {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  background-image: url(/assets/images/parallax.jpg);
+  background-repeat: no-repeat;
+  // background-size: 100%;
+  background-position: 30% 50%;
+
+  &-title {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 64px;
+    margin-bottom: 20px;
+  }
+}
+
+.button-read-more {
+  cursor: pointer;
+  height: 64px;
+  //   padding: 15px;
+  font-size: 19px !important;
+  margin-top: 0px !important;
+  padding: 15px 27px !important;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: 34px;
+  outline: none;
+  border: 1px solid #14a0f8;
+  color: white;
+  background: #14a0f8;
+}
