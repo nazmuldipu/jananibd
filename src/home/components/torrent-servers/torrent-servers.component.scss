@@ -1,17 +1,25 @@
 .torrent {
-    min-height: calc(100vh - 150px);
-    //   min-height: calc(100vh - 89px);
-    padding: 20px 0;
-    &-title {
-      text-align: center;
-      color: #14a0f8;
-    }
-    &-point {
-      & h4 {
-        padding: 20px 0 10px 0;
-      }
-      font-size: 14px;
-      font-weight: 200;
-    }
+  min-height: calc(100vh - 150px);
+  //   min-height: calc(100vh - 89px);
+  padding: 20px 0;
+  &-title {
+    text-align: center;
+    color: #14a0f8;
   }
-  
+  &-point {
+    & h4 {
+      padding: 20px 0 10px 0;
+    }
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
+
+.server-link {
+  font-size: 40px;
+  border-left: 4px solid #14a0f8;
+
+  padding-left: 15px;
+  text-decoration: none;
+  color: #ed2025;
+}
