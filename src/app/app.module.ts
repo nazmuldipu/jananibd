@@ -4,32 +4,26 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // routes
 export const ROUTES: Routes = [
   {
     path: '',
     loadChildren: '../home/home.module#HomeModule'
-  },
-  // {
-  //   path: 'auth',
-  //   loadChildren: '../auth/auth.module#AuthModule'
-  // }
-  // { path: '**', redirectTo: '/' }
+  }
 ];
 
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgbModule,
     RouterModule.forRoot(ROUTES),
-    NgbModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

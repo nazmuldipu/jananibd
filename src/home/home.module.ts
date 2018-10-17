@@ -19,7 +19,10 @@ import { OrderComponent } from './containers/order/order.component';
 import { FtpServersComponent } from './components/ftp-servers/ftp-servers.component';
 import { TorrentServersComponent } from './components/torrent-servers/torrent-servers.component';
 import { LiveTvsComponent } from './components/live-tvs/live-tvs.component';
-
+// import { ChartsModule } from 'ng2-charts';
+// import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { RoundProgressModule } from 'angular-svg-round-progressbar';
 // routes
 export const ROUTES: Routes = [
   {
@@ -67,7 +70,14 @@ export const ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(ROUTES), NgbModule],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(ROUTES),
+    NgbModule,
+    // BrowserModule,
+    // BrowserAnimationsModule,
+    RoundProgressModule
+  ],
   declarations: [
     HomeComponents,
     IndexComponent,
@@ -85,7 +95,8 @@ export const ROUTES: Routes = [
     OrderComponent,
     FtpServersComponent,
     TorrentServersComponent,
-    LiveTvsComponent
+    LiveTvsComponent,
+    PieChartComponent
   ]
 })
 export class HomeModule {}

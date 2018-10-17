@@ -1,0 +1,64 @@
+.progressBarHeader {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+.progressBarText {
+  position: absolute;
+  color: #bbb;
+  font-weight: 100;
+  line-height: 1;
+  top: 52%;
+  bottom: auto;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-left: 7.5px;
+}
+
+.progressive-pieChart {
+  padding: 30px;
+}
+
+// Little larger screen
+@media only screen and (max-width: 380px) {
+  .progressBarText {
+    font-size: 1.5rem;
+  }
+}
+
+// Little larger screen
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .progressBarText {
+    font-size: 2rem;
+  }
+}
+
+// Pads and larger phones
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .progressBarText {
+    font-size: 2rem;
+  }
+}
+
+// Larger pads
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .progressBarText {
+    font-size: 1.5rem;
+  }
+}
+
+// Horizontal pads and laptops
+@media only screen and (min-width: 992px) and (max-width: 1382px) {
+  .progressBarText {
+    font-size: 1.7rem;
+  }
+}
+
+// Really large screens
+@media only screen and (min-width: 1382px) {
+  .progressBarText {
+    font-size: 3.5rem;
+  }
+}
