@@ -1,0 +1,24 @@
+.ftp {
+    min-height: calc(100vh - 150px);
+    padding: 20px 0;
+    &-title {
+      text-align: center;
+      color: #ed2025;
+    }
+    &-point {
+      & h4 {
+        padding: 20px 0 10px 0;
+      }
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+  .server-link {
+    font-size: 25px;
+    border-left: 4px solid #ed2025;
+  
+    padding-left: 15px;
+    text-decoration: none;
+    color: #14a0f8;
+  }
+  

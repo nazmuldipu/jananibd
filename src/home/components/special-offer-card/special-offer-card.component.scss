@@ -1,0 +1,66 @@
+
+  .p-card{
+    margin-top: 25px;
+    text-align: center;
+    &-head{
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      & div{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 2.2rem;
+        &:before {
+          content: "\09F3";
+        }
+      }
+    }
+    &-size{
+      padding-left: 50px;
+      padding-right: 0;
+      font-size: 80px;
+      font-weight: 800;
+    }
+    &-right-1{
+      text-align: left;
+      padding-top: 20px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    &-right-2{
+      text-align: left;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    &-right-3{
+      text-align: left;
+      font-size: 30px;
+      font-weight: 600;
+      color: red;
+    }
+  }
+
+  .bg-teal {
+    background-color: teal !important;
+    color: #fff;
+  }
+  .bg-green {
+      background-color: #4CAF50 !important;
+      color: #fff;
+  }
+  .bg-light-green {
+      background-color: #8BC34A !important;
+      color: #fff;
+  }
+  .bg-light-blue {
+      background-color: #03A9F4 !important;
+      color: #fff;
+  }
+  .bg-deep-purple {
+      background-color: #673AB7 !important;
+      color: #fff;
+  }
+  .bg-amber {
+      background-color: #FFA000 !important;
+      color: #fff;
+  }

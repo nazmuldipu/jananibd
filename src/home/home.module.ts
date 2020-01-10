@@ -23,6 +23,10 @@ import { LiveTvsComponent } from './components/live-tvs/live-tvs.component';
 // import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { RoundProgressModule } from 'angular-svg-round-progressbar';
+import { JananiFtpComponent } from './containers/janani-ftp/janani-ftp.component';
+import { SpecialOfferComponent } from './containers/special-offer/special-offer.component';
+import { SpecialOfferCardComponent } from './components/special-offer-card/special-offer-card.component';
+// import { RoundProgressModule } from 'angular-svg-round-progressbar';
 // routes
 export const ROUTES: Routes = [
   {
@@ -46,6 +50,10 @@ export const ROUTES: Routes = [
         component: PackagesComponent
       },
       {
+        path: 'special-offer',
+        component: SpecialOfferComponent
+      },
+      {
         path: 'contacts',
         component: ContactsComponent
       },
@@ -56,6 +64,10 @@ export const ROUTES: Routes = [
       {
         path: 'ftp-serves',
         component: FtpServersComponent
+      },
+      {
+        path: 'janani-ftp',
+        component: JananiFtpComponent
       },
       {
         path: 'torrent-servers',
@@ -96,7 +108,10 @@ export const ROUTES: Routes = [
     FtpServersComponent,
     TorrentServersComponent,
     LiveTvsComponent,
-    PieChartComponent
+    PieChartComponent,
+    JananiFtpComponent,
+    SpecialOfferComponent,
+    SpecialOfferCardComponent
   ]
 })
-export class HomeModule {}
+export class HomeModule { }

@@ -1,0 +1,24 @@
+<div class="p-card shadow">
+    <div class="p-card-head" [ngClass]="background">
+        <!-- <div> &#2547; 800 </div> -->
+        <div> {{price}} </div>
+        <span>/Month</span>
+    </div>
+    <div class="row pb-4">
+        <div class="col-auto p-card-size">{{speed1}}</div>
+        <div class="col">
+            <div class="p-card-right-1">
+                Mbps
+            </div>
+            <div class="p-card-right-2">
+                (18 hours)
+            </div>
+            <div class="p-card-right-3">
+                {{speed2}} Mbps
+            </div>
+            <div class="p-card-right-2">
+                (6 hours)
+            </div>
+        </div>
+    </div>
+</div>
