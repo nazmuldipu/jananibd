@@ -40,6 +40,15 @@
     }
   }
 
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-bottom: -20px;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    border-top: 20px solid transparent;
+  }
+
   .bg-teal {
     background-color: teal !important;
     color: #fff;
@@ -63,4 +72,8 @@
   .bg-amber {
       background-color: #FFA000 !important;
       color: #fff;
+  }
+  .bg-white{
+    background-color: #fff !important;
+    color: black;
   }
