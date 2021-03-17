@@ -1,47 +1,46 @@
 .advantages {
   margin: 100px 0;
-  //   &-title {
-  //     text-align: center;
-
-  //   }
-  &-title {
-    text-align: center;
-    font-size: 45px;
-    line-height: 64px;
-    color: #14a0f8;
-    font-weight: 300;
-    margin-bottom: 4px;
-    & strong {
-      font-weight: bold;
-      color: #333333;
-    }
-  }
-  &-text {
-    text-align: center;
-    font-size: 35px;
-    line-height: 64px;
-    color: #14a0f8;
-    font-weight: 100;
-    margin-bottom: 43px;
-  }
-
-  &-icon {
-    color: #14a0f8;
-    font-size: 120px;
-  }
-  &-head {
-    color: #14a0f8;
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 35px;
-    margin-bottom: 13px;
-  }
-  &-description {
-    padding-bottom: 34px;
-    font-weight: 300;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    line-height: 34px;
-    color: #888888;
-  }
+}
+.advantage-box {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0px;
+  background: transparent;
+  clear: both;
+}
+.box-image img {
+  width: 120px;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  line-height: 1;
+  padding: 30px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #222222;
+  background: #ffffff;
+}
+.box-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  border-top: 1px dashed #e1e1e1;
+  z-index: -1;
+}
+.box-content {
+  padding-top: 15px;
+}
+.box-content .ourservice-heading {
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
 }

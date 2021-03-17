@@ -1,40 +1,17 @@
 <div class="advantages">
   <div class="container">
-    <div class="advantages-title">
-      A RANGE OF
-      <strong>ADVANTAGES</strong>
-    </div>
-    <div class="advantages-text">
-      AT AN AFFORDABLE PRICE
-    </div>
+    <section-heding [section]="'A RANGE OF'" [name]="'ADVANTAGES'"></section-heding>
+
     <div class="row">
-      <div class="col-md-4">
-        <div class="advantages-icon">
-          <i class="fa fa-cog" aria-hidden="true"></i>
-        </div>
-        <div class="advantages-head">Equipment installation and setup</div>
-        <div class="advantages-description">
-          Internet Provider delivers huge value and super-fast broadband over our fibre to the node network. We also include Netphone
-          with every plan.
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="advantages-icon">
-          <i class="fa fa-headphones" aria-hidden="true"></i>
-        </div>
-        <div class="advantages-head">Customer support centre</div>
-        <div class="advantages-description">
-          We provide our clients with free 24/7 support that guarantees the solution of any issues with your connection or cloud hosting.
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="advantages-icon">
-          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-        </div>
-        <div class="advantages-head">Customer satisfaction guarantee</div>
-        <div class="advantages-description">
-          The amount of our company’s satisfied customers grows with every new client creating satisfaction guarantee for everyone
-          who uses our services.
+      <div class="col-md-4" *ngFor="let adv of advantages">
+        <div class="advantage-box">
+          <div class="box-image">
+            <img [src]="adv.src" alt="">
+          </div>
+          <div class="box-content">
+            <h3 class="ourservice-heading">{{adv.title}}</h3>
+            <p class="description">{{adv.text}}</p>
+          </div>
         </div>
       </div>
     </div>
