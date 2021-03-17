@@ -1,55 +1,32 @@
 <div class="services">
   <div class="container">
-    <div class="row">
-      <div class="col-12 services-title">
-        <h2>Our Services </h2>
+    <section-heding [section]="'OUR'" [name]="'SERVICES'"></section-heding>
+    <div class="row my-5">
+      <div class="col-md-3 p-0">
+        <ul class="p-0 m-0">
+          <li *ngFor="let serv of services;let i = index" class="service-list" [class.active]="serviceIndex == i">
+            <a (click)="handleServiceClick(i)">
+              <i class="fa" [ngClass]="serv.icon"></i>
+              &nbsp; {{serv.name}}
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-6"></div>
-      <div class="col-md-6">
-        <div class="services-point">
-          <h4>What We Do</h4>
-          <p>We have the privilege of working with some of the most well known companies in our country and we don’t take this
-            lightly. We work both diligently and intelligently to ensure that the needs of our clients come first. And we’re
-            not afraid to push the envelope or encourage restraint. We are only as good as the reputation of our clients,
-            and we willingly put our own reputation on the line to ensure that they get as much out of the relationship as
-            we do.</p>
-          <h4>Facilities:</h4>
-          <ul>
-            <li>We also provide Real IP Address to our Home Users for free, who are using Packages over 1500TK.</li>
-            <li>Most of our Connections, both Corporate and Home are given through Optical Fiber.</li>
-            <li>We provide our Internet Connection along with power backup to Corporate Office's as well as Home Users, who have
-              special requirements.</li>
-            <li>Our Professionals give solutions to Network Problems/Configuration, also solve Routing and Network Gateway Issues.</li>
-          </ul>
+      <div class="col-md-9 service-content">
+        <div class="row">
+          <div class="col-md-4"><img class="img-fluid" src="assets/images/services.jpg"></div>
+          <div class="col-md-8">
+            <h3><i class="fa" [ngClass]="service.icon"></i>
+              &nbsp; {{service.name}}</h3>
+            <p>{{service.text}}</p>
+            <ul style="list-style: none; padding: 0;">
+              <li *ngFor="let fet of service.features"><i class="fa fa-check"></i> &nbsp; {{fet}}
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row my-4">
-      <div class="col-12 services-title mb-2">
-        <h2>Our Strength </h2>
-      </div>
-
-      <div class="col-xs-6 col-md-3">
-        <pie-chart [data]="pbar1"></pie-chart>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <pie-chart [data]="pbar2"></pie-chart>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <pie-chart [data]="pbar3"></pie-chart>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <pie-chart [data]="pbar4"></pie-chart>
-      </div>
-    </div>
-
-    <div class="row my-4">
-      <div class="col-12 services-title mb-2">
-        <h2>Exclusive Services</h2>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Todo: our skills from http://www.dotinternetbd.com/about.php; http://www.bnet-bd.com/ -->

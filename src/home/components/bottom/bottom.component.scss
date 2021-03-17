@@ -1,35 +1,69 @@
 .bottom {
-  background-color: rgb(210, 242, 250);
-  &-head {
-    font-size: 50px;
-    line-height: 64px;
-    color: #14a0f8;
-    font-weight: 100;
-    margin-bottom: 20px;
-  }
-  &-text {
-    padding-bottom: 34px;
-    font-weight: 300;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    line-height: 34px;
-    color: #888888;
-    & i {
-      margin: 0 8px;
-      background: #fffc00;
-      color: #333333;
-      display: inline-block;
-      line-height: 63px;
-      font-size: 35px;
-      font-weight: bold;
-      width: 63px;
-      text-align: center;
-      border-radius: 50%;
-    }
-  }
+  background: #222;
+  color: #797979;
 }
-@media (max-width: 767px) {
-  .bottom-logo {
-    height: 40px;
-  }
+.navbar-brand {
+  font-size: 35px;
+  font-family: "Parisienne";
+  color: #fff;
+  padding: 30px 0;
 }
+
+.contact-info {
+  line-height: 1.6;
+  color: #999999;
+  padding: 30px 0;
+}
+
+.media:last-child {
+  border-right: none !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0px;
+}
+.contact-info .media {
+  display: inline-block;
+  border-right: 1px dashed #636363;
+  padding-right: 30px;
+  margin-right: 30px;
+}
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+// .bottom {
+//   background-color: rgb(210, 242, 250);
+//   &-head {
+//     font-size: 50px;
+//     line-height: 64px;
+//     color: #14a0f8;
+//     font-weight: 100;
+//     margin-bottom: 20px;
+//   }
+//   &-text {
+//     padding-bottom: 34px;
+//     font-weight: 300;
+//     font-family: 'Raleway', sans-serif;
+//     font-size: 20px;
+//     line-height: 34px;
+//     color: #888888;
+//     & i {
+//       margin: 0 8px;
+//       background: #fffc00;
+//       color: #333333;
+//       display: inline-block;
+//       line-height: 63px;
+//       font-size: 35px;
+//       font-weight: bold;
+//       width: 63px;
+//       text-align: center;
+//       border-radius: 50%;
+//     }
+//   }
+// }
+// @media (max-width: 767px) {
+//   .bottom-logo {
+//     height: 40px;
+//   }
+// }
