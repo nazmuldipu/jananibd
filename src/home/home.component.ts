@@ -3,8 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'home',
   template: `
-  <navbar></navbar>
-  <div class="topPadd"></div>
+  <navbar2></navbar2>
   <router-outlet></router-outlet>
   <bottom></bottom>
   <footer></footer>

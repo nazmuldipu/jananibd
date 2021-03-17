@@ -1,0 +1,21 @@
+@import '../../../assets/theme.scss';
+
+.logo-image {
+  height: 40px;
+}
+.navbar-brand{
+  font-size: 35px;
+  font-family: 'Parisienne';
+}
+.nav-link {
+  cursor: pointer;
+  text-align: right;
+  // font-family: 'Nunito';
+  color: $primary-text-color !important;
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+.navbar-nav .active > .nav-link {
+  color: $primary-color !important;
+}

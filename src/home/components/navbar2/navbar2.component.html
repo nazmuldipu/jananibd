@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="logo-image" src="assets/images/logo_sm.png"> Janani
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jananiNav"
+            aria-controls="jananiNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapse()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="jananiNav" [class.show]="show">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/" (click)="toggleCollapse()">Home</a>
+                </li>
+                <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="packageDropdown" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Package</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="packageDropdown">
+                        <a class="dropdown-item" routerLink="/packages" (click)="toggleCollapse()">
+                            Regular </a>
+                        <a class="dropdown-item" routerLink="/special-offer" (click)="toggleCollapse()">
+                            Special Offer </a>
+                    </div>
+                </li>
+                <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Media</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" routerLink="/ftp-serves" (click)="toggleCollapse()">
+                            FTP Servers </a>
+                        <a class="dropdown-item" routerLink="/torrent-servers" (click)="toggleCollapse()">
+                            TORRENT servers </a>
+                        <a class="dropdown-item" routerLink="/live-tvs" (click)="toggleCollapse()">
+                            LIVE TV</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/services" (click)="toggleCollapse()">Our Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about" (click)="toggleCollapse()">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contacts" (click)="toggleCollapse()">Contact Us</a>
+                </li>
+                <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Login</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="http://jt.m.asthatec.net/" target="_blank"
+                            (click)="toggleCollapse()">
+                            Mobile</a>
+                        <a class="dropdown-item" href="http://jt.web.asthatec.net/" target="_blank"
+                            (click)="toggleCollapse()">
+                            Desktop </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav" style="font-size: 18px;">
+                <li><i class="fa fa-phone text-primary"></i> <span class="text-monospace"> 01686-763706</span> </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -21,7 +21,7 @@ export const ROUTES: Routes = [
     BrowserAnimationsModule,
     NgbModule,
     RouterModule.forRoot(ROUTES),
-    NgbModule.forRoot()
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
