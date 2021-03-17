@@ -1,0 +1,22 @@
+<div class="plan-box">
+    <div class="plan-box-content">
+        <div class="label" *ngIf="plan.best"><span>BEST SELLER</span></div>
+        <div class="block-inner-header">
+            <div class="wrapper-header">
+                <h3 class="name">{{plan.name}}</h3>
+                <div class="excerpt">
+                    <p>{{plan.plan}}</p>
+                </div>
+            </div>
+            <div class="wrapper-pricing">
+                <span class="price"><span class="price-symbol">৳</span>{{plan.price}}</span>
+            </div>
+        </div>
+        <div class="block-inner-content">
+            <ul>
+                <li *ngFor="let text of plan.includes">{{text}}</li>
+            </ul>
+        </div>
+        <a class="btn btn-janani rounded-pill mb-4" routerLink="/order">Connect now</a>
+    </div>
+</div>

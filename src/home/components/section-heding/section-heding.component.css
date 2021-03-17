@@ -1,0 +1,33 @@
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.section-title {
+  margin: 0;
+  color: #42a5f5;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-title span {
+  color: #222222;
+}
+.section-title:before {
+  content: "";
+  background: url(/assets/images/line-left-dark.png) no-repeat;
+  width: 90px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.section-title:after {
+  content: "";
+  background: url(/assets/images/line-right-dark.png) no-repeat;
+  width: 90px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+}

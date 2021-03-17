@@ -27,6 +27,8 @@ import { JananiFtpComponent } from './containers/janani-ftp/janani-ftp.component
 import { SpecialOfferComponent } from './containers/special-offer/special-offer.component';
 import { SpecialOfferCardComponent } from './components/special-offer-card/special-offer-card.component';
 import { Navbar2Component } from './components/navbar2/navbar2.component';
+import { SectionHedingComponent } from './components/section-heding/section-heding.component';
+import { PlanBoxComponent } from './components/plan-box/plan-box.component';
 // import { RoundProgressModule } from 'angular-svg-round-progressbar';
 // routes
 export const ROUTES: Routes = [
@@ -113,7 +115,9 @@ export const ROUTES: Routes = [
     JananiFtpComponent,
     SpecialOfferComponent,
     SpecialOfferCardComponent,
-    Navbar2Component
+    Navbar2Component,
+    SectionHedingComponent,
+    PlanBoxComponent
   ]
 })
 export class HomeModule { }

@@ -1,0 +1,117 @@
+.plan-box {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0px;
+  background: transparent;
+  clear: both;
+}
+
+.plan-box-content {
+  background: #fff;
+  padding: 0 30px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.plan-box-content:hover {
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 40%);
+  background: #ddd;
+}
+
+.plan-box-content:hover .wrapper-pricing .price {
+  color: #2d86cf;
+}
+
+.plan-box-content .label {
+  background: transparent url(/assets/images/bestseller.png) no-repeat scroll 0
+    0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  height: 45px;
+  letter-spacing: 0.5px;
+  line-height: 49px;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 150px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  width: 160px;
+}
+
+.wrapper-header .name {
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 35px 0 0;
+}
+
+.wrapper-header .excerpt {
+  color: #666666;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.wrapper-pricing .price {
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px dashed #e1e1e1;
+  border-top: 1px dashed #e1e1e1;
+  color: #222222;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 10px 0;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.price .price-symbol {
+  font-size: 20px;
+  font-weight: 900;
+  vertical-align: super;
+}
+
+.block-inner-content {
+  padding-top: 20px;
+}
+.block-inner-content ul {
+  padding: 0;
+  list-style: none;
+}
+
+.block-inner-content ul li {
+  padding: 8px 0;
+  font-weight: 16px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.btn-janani {
+  color: #fff;
+  background-color: #222;
+  border-color: #333;
+}
+
+.btn-janani:hover {
+  background-color: #2d86cf;
+  border-color: #2d86cf;
+}
