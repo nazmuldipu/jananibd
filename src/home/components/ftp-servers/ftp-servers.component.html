@@ -1,4 +1,19 @@
-<div class="ftp">
+<page-head [name]="'FTP Servers'" [page]="'ftp'"></page-head>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-2 mt-4" *ngFor="let ftp of ftp_servers">
+      <a [href]="ftp.link" target="_blank">
+        <div class="card">
+          <img [src]="'assets/images/ftp/'+ftp.slug+'.jpg'" class="card-img-top" [alt]="ftp.slug">
+          <div class="card-footer p-2">
+            <div class="card-title text-center m-0"><strong> {{ftp.name}}</strong></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- <div class="ftp">
   <div class="container">
     <div class="row">
       <div class="col-12 ftp-title">
@@ -6,15 +21,7 @@
       </div>
     </div>
     <div class="row">
-      <!-- <div class="col-md-6 py-4">
-        <a class="server-link" href="http://172.16.50.4/" target="_blank">Janani Technology - 1</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://172.16.50.5/" target="_blank">Janani Technology - 2</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://172.16.50.41/" target="_blank">B.net</a>
-      </div>  -->
+
       <div class="col-md-6 py-4">
         <a class="server-link" routerLink="/janani-ftp">Janani Technology</a>
       </div>
@@ -30,19 +37,10 @@
       <div class="col-md-6 py-4">
         <a class="server-link" href="http://15.1.1.1/" target="_blank">Circle Network</a>
       </div>
-      <!-- <div class="col-md-6 py-4">
-        <a class="server-link" href="http://www.moviemela.live/" target="_blank">Movie mela</a>
-      </div> 
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://www.bdfun.club/" target="_blank">bd fun</a>
-      </div> 
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="https://dekhvhai.com/" target="_blank">Dekhvhai</a>
-      </div> -->
       <div class="col-md-6 py-4">
         <a class="server-link" href="http://plygig.com/" target="_blank">plygig</a>
       </div>
 
     </div>
   </div>
-</div>
+</div> -->
