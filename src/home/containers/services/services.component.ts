@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: "services",
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ["./services.component.scss"],
 })
 export class ServicesComponent {
+  @Input()head: boolean = true;
+  
   serviceIndex = 0;
   services = [
     {

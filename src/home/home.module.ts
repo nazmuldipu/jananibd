@@ -29,6 +29,7 @@ import { SpecialOfferCardComponent } from './components/special-offer-card/speci
 import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { SectionHedingComponent } from './components/section-heding/section-heding.component';
 import { PlanBoxComponent } from './components/plan-box/plan-box.component';
+import { PageHeadComponent } from './components/page-head/page-head.component';
 // import { RoundProgressModule } from 'angular-svg-round-progressbar';
 // routes
 export const ROUTES: Routes = [
@@ -117,7 +118,8 @@ export const ROUTES: Routes = [
     SpecialOfferCardComponent,
     Navbar2Component,
     SectionHedingComponent,
-    PlanBoxComponent
+    PlanBoxComponent,
+    PageHeadComponent
   ]
 })
 export class HomeModule { }
