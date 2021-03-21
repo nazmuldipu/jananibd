@@ -10,8 +10,6 @@ import { Router } from '@angular/router';
 export class BannerComponent {
   images = [1,2,3].map((i) => `assets/images/slides_${i}.jpg`);
 
-  // images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
-  // images = [1, 2, 3].map(i => `assets/images/slide-${i}.jpg`);
   constructor(private router: Router, config: NgbCarouselConfig) {
     config.interval = 3000;
     config.keyboard = false;

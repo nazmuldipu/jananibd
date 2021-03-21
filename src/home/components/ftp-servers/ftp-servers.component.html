@@ -1,7 +1,7 @@
 <page-head [name]="'FTP Servers'" [page]="'ftp'"></page-head>
 <div class="container my-5">
   <div class="row">
-    <div class="col-md-2 mt-4" *ngFor="let ftp of ftp_servers">
+    <div class="col-md-2 col-6 mt-4" *ngFor="let ftp of ftp_servers">
       <a [href]="ftp.link" target="_blank">
         <div class="card">
           <img [src]="'assets/images/ftp/'+ftp.slug+'.jpg'" class="card-img-top" [alt]="ftp.slug">
@@ -13,34 +13,3 @@
     </div>
   </div>
 </div>
-<!-- <div class="ftp">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 ftp-title">
-        <h2>FTP-Servers </h2>
-      </div>
-    </div>
-    <div class="row">
-
-      <div class="col-md-6 py-4">
-        <a class="server-link" routerLink="/janani-ftp">Janani Technology</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://172.16.50.41/" target="_blank">B.net</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://www.ftpbd.net/" target="_blank">ftpbd</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://172.16.50.44:8096" target="_blank">Movie live stream</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://15.1.1.1/" target="_blank">Circle Network</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://plygig.com/" target="_blank">plygig</a>
-      </div>
-
-    </div>
-  </div>
-</div> -->

@@ -1,21 +1,15 @@
-<div class="torrent">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 torrent-title">
-        <h2>Torrent Servers </h2>
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="https://www.crazyhd.com/" target="_blank">crazyhd</a>
-      </div>
-      <div class="col-md-6 py-4">
-        <a class="server-link" href="http://bdixtorrent.com/" target="_blank">bdixtorrent</a>
-      </div>
-
-
+<page-head [name]="'Torrent Servers'" [page]="'torrent'"></page-head>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-2 col-6 mt-4" *ngFor="let ftp of torrentSevers">
+      <a [href]="ftp.link" target="_blank">
+        <div class="card">
+          <img [src]="'assets/images/ftp/'+ftp.slug+'.jpg'" class="card-img-top" [alt]="ftp.slug">
+          <div class="card-footer p-2">
+            <div class="card-title text-center m-0"><strong> {{ftp.name}}</strong></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>

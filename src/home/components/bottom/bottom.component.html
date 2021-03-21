@@ -1,25 +1,25 @@
 <div class="bottom">
   <div class="container">
     <div class="row">
-      <div class="col-auto navbar-brand">
+      <div class="col-md-auto col-12 navbar-brand">
         <img class="logo-image" src="assets/images/logo_sm.png"> Janani
       </div>
       <div class="col">
         <div class="contact-info">
-          <div class="d-flex justify-content-center">
-            <div class="media">
-              <div class="media-body">
-                Ali Mia Membar Market<br>
-                Bhuighar Bus-Stand, Bhuighar <br>
-                Fatullah, Narayanganj-1421
-              </div>
-            </div>
-            <div class="media">
-              <div class="media-body">
-                Phone: (+88) 01686-763706,  01904-111196<br>
-                Email : <a href="mailto:atikullahfaysal@gmail.com">atikullahfaysal@gmail.com</a> </div>
+          <!-- <div class="d-flex justify-content-center"> -->
+          <div class="media">
+            <div class="media-body">
+              {{_companyInfo.address_line1}}<br>
+              {{_companyInfo.address_line2}}<br>
+              {{_companyInfo.address_line3}}
             </div>
           </div>
+          <div class="media">
+            <div class="media-body">
+              Phone: (+88) {{_companyInfo.phone[0]}}, {{_companyInfo.phone[1]}} to 99<br>
+              Email : <a [href]="'mailto:'+_companyInfo.email">{{_companyInfo.email}}</a> </div>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>

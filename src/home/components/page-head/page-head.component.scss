@@ -58,3 +58,16 @@
   color: #ffffff;
   float: left;
 }
+
+@media (max-width: 767px) {
+  .about-breadscrumb .bread-title{
+    display: block;
+    width: 100%;
+    // text-align: left;
+  }
+  .about-breadscrumb .breadcrumb {
+    float: left;
+    padding-top: 15px;
+  }
+  
+}

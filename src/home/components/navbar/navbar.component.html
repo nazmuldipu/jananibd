@@ -1,11 +1,12 @@
 <!-- <nav class="navbar navbar-expand-md fixed-top bg-light raised"> -->
 <nav class="navbar navbar-expand-md bg-light raised">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-      aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapse()">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"
+      (click)="toggleCollapse()">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" routerLink="/">
       <img class="logo-image" src="assets/images/logo.png">
     </a>
     <div class="collapse navbar-collapse show" id="navbarsExampleDefault" [class.show]="show">
@@ -24,7 +25,8 @@
           <a class="nav-link" routerLink="/services" (click)="toggleCollapse()">SERVICES</a>
         </li>
         <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PACKAGES</a>
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">PACKAGES</a>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown02">
             <a class="dropdown-item" routerLink="/packages" (click)="toggleCollapse()">
               Regular </a>
@@ -33,7 +35,8 @@
           </div>
         </li>
         <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEDIA</a>
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">MEDIA</a>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
             <a class="dropdown-item" routerLink="/ftp-serves" (click)="toggleCollapse()">
               FTP SERVER </a>
@@ -47,7 +50,8 @@
           <a class="nav-link" routerLink="/contacts" (click)="toggleCollapse()">CONTACTS</a>
         </li>
         <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Login</a>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
             <a class="dropdown-item" href="http://jt.m.asthatec.net/" target="_blank" (click)="toggleCollapse()">
               Mobile</a>

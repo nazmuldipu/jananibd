@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { CompanyInfo } from "src/data/data";
 
 @Component({
   selector: "navbar2",
@@ -7,6 +8,8 @@ import { Component } from "@angular/core";
 })
 export class Navbar2Component {
   show = false;
+
+  _companyInfo = CompanyInfo;
 
   toggleCollapse() {
     this.show = !this.show;
