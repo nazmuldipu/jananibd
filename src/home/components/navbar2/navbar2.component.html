@@ -16,16 +16,6 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/packages" (click)="toggleCollapse()">Package</a>
                 </li>
-                <!-- <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
-                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="packageDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Package</a>
-                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="packageDropdown">
-                        <a class="dropdown-item" routerLink="/packages" (click)="toggleCollapse()">
-                            Regular </a>
-                        <a class="dropdown-item" routerLink="/special-offer" (click)="toggleCollapse()">
-                            Special Offer </a>
-                    </div>
-                </li> -->
                 <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
                     <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Media</a>
@@ -49,7 +39,11 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/contacts" (click)="toggleCollapse()">Contact Us</a>
                 </li>
-                <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://jt.web.asthatec.net/welcome" target="_blank" (click)="toggleCollapse()">
+                        Selfcare </a>
+                </li>
+                <!-- <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
                     <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Login</a>
                     <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
@@ -60,7 +54,7 @@
                             (click)="toggleCollapse()">
                             Desktop </a>
                     </div>
-                </li>
+                </li> -->
             </ul>
             <ul class="navbar-nav" style="font-size: 18px;">
                 <li><i class="fa fa-phone text-primary"></i> <span class="text-monospace">
