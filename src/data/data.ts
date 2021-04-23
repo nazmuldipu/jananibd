@@ -323,6 +323,11 @@ export const TVServers = [
     link: "https://www.jagobd.com/",
   },
   {
+    name: "FTPBD Live",
+    slug: "ftpbdlive",
+    link: "http://otv.ftpbd.net/",
+  },
+  {
     name: "FTP Server",
     slug: "ftp_server",
     link: "http://icc.moviemela.live/livetv.php",
