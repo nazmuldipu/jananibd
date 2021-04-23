@@ -310,7 +310,7 @@ export const TVServers = [
   {
     name: "FTP BD",
     slug: "ftpbd",
-    link: "http://www.ftpbd.net/online-tv/",
+    link: "http://otv.ftpbd.net/",
   },
   {
     name: "Bioscope Live",
@@ -321,11 +321,6 @@ export const TVServers = [
     name: "Jagobd",
     slug: "jagobd",
     link: "https://www.jagobd.com/",
-  },
-  {
-    name: "FTPBD Live",
-    slug: "ftpbdlive",
-    link: "http://otv.ftpbd.net/",
   },
   {
     name: "FTP Server",
