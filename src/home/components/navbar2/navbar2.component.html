@@ -13,8 +13,15 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/" (click)="toggleCollapse()">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/packages" (click)="toggleCollapse()">Package</a>
+                <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Packages</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" routerLink="/packages" (click)="toggleCollapse()">
+                            Regular </a>
+                        <a class="dropdown-item" routerLink="/special-offer" (click)="toggleCollapse()">
+                            Special Offer </a>
+                    </div>
                 </li>
                 <li ngbDropdown placement="bottom-right" class="nav-item dropdown left-border">
                     <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"

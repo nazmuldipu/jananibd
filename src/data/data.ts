@@ -16,9 +16,9 @@ export const CompanyInfo = {
 
 export const Packages = [
   {
-    name: "Basic",
-    plan: "Council Plan",
+    plan: "Basic Plan",
     speed: "2Mbps",
+    price: "500",
     includes: [
       "Internet speed - 2Mbps",
       "Unlimited traffic",
@@ -29,9 +29,9 @@ export const Packages = [
     ],
   },
   {
-    name: "Standard",
     plan: "Bronze Plan",
     speed: "3Mbps",
+    price: "600",
     includes: [
       "Internet speed - 3Mbps",
       "Unlimited traffic",
@@ -42,9 +42,9 @@ export const Packages = [
     ],
   },
   {
-    name: "Value",
     plan: "Silver  Plan",
     speed: "4Mbps",
+    price: "700",
     includes: [
       "Internet speed - 4Mbps",
       "Unlimited traffic",
@@ -55,9 +55,9 @@ export const Packages = [
     ],
   },
   {
-    name: "Premium",
-    plan: "Gold  Plan",
+    plan: "Premium  Plan",
     speed: "5Mbps",
+    price: "800",
     best: true,
     includes: [
       "Internet speed - 5Mbps",
@@ -69,12 +69,12 @@ export const Packages = [
     ],
   },
   {
-    name: "Gamer",
     plan: "Diamond Plan",
-    speed: "6Mbps",
+    speed: "8Mbps",
+    price: "1,000",
     best: true,
     includes: [
-      "Internet speed - 6Mbps",
+      "Internet speed - 8Mbps",
       "Unlimited traffic",
       "Youtube bandwidth - 80mbps",
       "Facebook bandwidth - 80mbps",
@@ -83,11 +83,24 @@ export const Packages = [
     ],
   },
   {
-    name: "Power User",
     plan: "Platinum  Plan",
-    speed: "10Mbps",
+    speed: "12Mbps",
+    price: "1,500",
     includes: [
-      "Internet speed - 10Mbps",
+      "Internet speed - 12Mbps",
+      "Unlimited traffic",
+      "Youtube bandwidth - 100mbps",
+      "Facebook bandwidth - 100mbps",
+      "BDIX Bandwidth - 100mbps",
+      "24/7 Phone and Online Support",
+    ],
+  },
+  {
+    plan: "Power User",
+    speed: "15Mbps",
+    price: "2,000",
+    includes: [
+      "Internet speed - 15Mbps",
       "Unlimited traffic",
       "Youtube bandwidth - 100mbps",
       "Facebook bandwidth - 100mbps",
