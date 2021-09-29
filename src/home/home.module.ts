@@ -30,6 +30,8 @@ import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { SectionHedingComponent } from './components/section-heding/section-heding.component';
 import { PlanBoxComponent } from './components/plan-box/plan-box.component';
 import { PageHeadComponent } from './components/page-head/page-head.component';
+import { EkRateComponent } from './containers/ek-rate/ek-rate.component';
+import { EkRatePakComponent } from './components/ek-rate-pak/ek-rate-pak.component';
 // import { RoundProgressModule } from 'angular-svg-round-progressbar';
 // routes
 export const ROUTES: Routes = [
@@ -56,6 +58,10 @@ export const ROUTES: Routes = [
       {
         path: 'special-offer',
         component: SpecialOfferComponent
+      },
+      {
+        path: 'ek-rate',
+        component: EkRateComponent
       },
       {
         path: 'contacts',
@@ -119,7 +125,9 @@ export const ROUTES: Routes = [
     Navbar2Component,
     SectionHedingComponent,
     PlanBoxComponent,
-    PageHeadComponent
+    PageHeadComponent,
+    EkRateComponent,
+    EkRatePakComponent
   ]
 })
 export class HomeModule { }

@@ -1,0 +1,32 @@
+<div class="packages" [class.full-page] = singlePage >
+  <div class="container">
+    <div class="packages-title">
+      <h2>এক দেশ এক রেট</h2>
+      <span
+        >According to BTRC direction, Janani Technology more extra bandwidth in
+        cheap prices</span
+      >
+      <br />
+      <span class="text-danger"
+        >Note: In this packages all extra features excluded, (i.e. Youtube,
+        Facebook Bandwidth)</span
+      >
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4" *ngFor="let pak of packages">
+        <div class="package shadow">
+          <div class="package-price">৳{{ pak.price }}</div>
+          <div class="package-bandwidth">Gov imposed {{ pak.gov }}Mbps</div>
+          <div class="package-bandwidth">
+            We provide <span>{{ pak.bandwidth }}</span
+            >Mbps
+          </div>
+          <div class="package-extra">
+            Extra <span>{{ pak.bandwidth - pak.gov }}</span
+            >Mbps
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
