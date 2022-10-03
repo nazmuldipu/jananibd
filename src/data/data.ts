@@ -175,6 +175,121 @@ export const Services = [
 
 export const FTPServers = [
   {
+    name: "FTP Media.net",
+    slug: "ftpmedia",
+    link: "http://10.1.1.1/",
+  },
+  {
+    name: "Sam Online 1",
+    slug: "sam_online",
+    link: "http://172.16.50.4/",
+  },
+  {
+    name: "Sam Online 2",
+    slug: "sam_online",
+    link: "http://172.16.50.5/",
+  },
+  {
+    name: "VDO Mela",
+    slug: "vdomela",
+    link: "http://vdomela.com/",
+  },
+  {
+    name: "Naturalbd",
+    slug: "naturalbd",
+    link: "https://www.naturalbd.com/",
+  },
+  {
+    name: "Bongo BD",
+    slug: "bongo_bd",
+    link: "https://bongobd.com/",
+  },
+  {
+    name: "iHub",
+    slug: "ihub",
+    link: "http://ihub.live/",
+  },
+  {
+    name: "SHOWTIME",
+    slug: "show-time",
+    link: "http://showtimebd.com/",
+  },
+  {
+    name: "TIMENAI",
+    slug: "timenai",
+    link: "http://timenai.com/",
+  },
+  {
+    name: "MediaPlex",
+    slug: "media-plex",
+    link: "http://59.153.203.202/",
+  },
+  {
+    name: "SunPlex",
+    slug: "sun-plex",
+    link: "https://sunplex.net/",
+  },
+  {
+    name: "CtgMovies",
+    slug: "ctg-movies",
+    link: "http://ctgmovies.com/",
+  },
+  {
+    name: "ExploreOnline",
+    slug: "explore-online",
+    link: "http://103.222.20.150/",
+  },
+  {
+    name: "CrazyCtg",
+    slug: "crazyctg",
+    link: "http://crazyctg.com/",
+  },
+  {
+    name: "ABI Station 1",
+    slug: "abi-station",
+    link: "http://103.134.58.242/",
+  },
+  {
+    name: "ABI Station 2",
+    slug: "abi-station",
+    link: "http://abistation.net/",
+  },
+  {
+    name: "Polly Flix",
+    slug: "polly-flix",
+    link: "http://12.1.1.3/flix/",
+  },
+  {
+    name: "CineBioscope",
+    slug: "cinebioscope",
+    link: "http://www.cinebioscope.com/",
+  },
+  {
+    name: "FM Movies",
+    slug: "fm-movies",
+    link: "https://web.fmovies.to/home",
+  },
+  {
+    name: "Quickonlineftp",
+    slug: "quickonlineftp",
+    link: "http://quickonlineftp.com/quickonline/",
+  },
+  {
+    name: "Kalponik",
+    slug: "kalponik",
+    link: "http://www.kalponik.net.bd/",
+  },
+  {
+    name: "Banglatube",
+    slug: "banglatube",
+    link: "http://www.banglatube.net/",
+  },
+  {
+    name: "Elaach",
+    slug: "elaach",
+    link: "https://elaach.com/",
+  },
+  {
     name: "Today`s Upload",
     slug: "todays_upload",
     link: "http://server3.ftpbd.net/FTP-3/%5BToday%27s%20Upload%5D/",
@@ -305,12 +420,17 @@ export const TorrentServers = [
     slug: "bdixtorrent",
     link: "http://bdixtorrent.com/",
   },
+  {
+    name: "Torrentbd",
+    slug: "torrentbd",
+    link: "https://www.torrentbd.com/",
+  },
 ];
 export const TVServers = [
   {
-    name: "FTP BD",
-    slug: "ftpbd",
-    link: "http://www.ftpbd.net/online-tv/",
+    name: "Ebox",
+    slug: "ebox-tv",
+    link: "http://tv.ebox.live/",
   },
   {
     name: "Bioscope Live",
@@ -323,8 +443,28 @@ export const TVServers = [
     link: "https://www.jagobd.com/",
   },
   {
-    name: "FTP Server",
-    slug: "ftp_server",
-    link: "http://icc.moviemela.live/livetv.php",
+    name: "Hoi Hullor",
+    slug: "hoihullor",
+    link: "http://172.16.128.2",
+  },
+  {
+    name: "Hoi Hullor2",
+    slug: "hoihullor",
+    link: "http://live.hoihulloor.com/",
+  },
+  {
+    name: "Dhaka Flix",
+    slug: "dhaka-flix",
+    link: "http://172.16.50.2/",
+  },
+  {
+    name: "AmrBD",
+    slug: "amrbd",
+    link: "http://amrbd.com/",
+  },
+  {
+    name: "iHub",
+    slug: "ihub",
+    link: "http://ihub.live/live-tv.html",
   },
 ];
