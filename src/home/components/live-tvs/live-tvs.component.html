@@ -4,7 +4,9 @@
     <div class="col-md-2 col-6 mt-4" *ngFor="let ftp of tvServers">
       <a [href]="ftp.link" target="_blank">
         <div class="card">
-          <img [src]="'assets/images/ftp/'+ftp.slug+'.jpg'" class="card-img-top" [alt]="ftp.slug">
+          <div class="card-image">
+            <img [src]="'assets/images/ftp/'+ftp.slug+'.jpg'" class="card-img-top" [alt]="ftp.slug">
+          </div>
           <div class="card-footer p-2">
             <div class="card-title text-center m-0"><strong> {{ftp.name}}</strong></div>
           </div>
